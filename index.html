@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dance notes, practice stories, and little moments from the studio.">
+  <title>Step Notes | A Dance Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Step Notes home"><span class="wordmark-icon">S</span> step notes<span class="wordmark-period">.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#stories">Stories</a>
+      <a href="#about">About me</a>
+      <a href="login.html">Log in</a>
+      <a class="nav-contact" href="#newsletter">Stay in rhythm <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow">Welcome to my blog</p>
+        <h1 id="intro-title">My Dance Blog</h1>
+        <p class="intro-text">I enjoy dancing and learning new steps. Here I share some of the things I like about my hobby.</p>
+        <a class="text-link" href="#stories">Read my posts</a>
+      </div>
+      <div class="intro-image-wrap">
+        <img class="intro-image" src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=85" alt="Dancers moving together on a stage">
+      </div>
+    </section>
+
+    <section class="stories-section" id="stories" aria-labelledby="stories-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">My writing</p>
+          <h2 id="stories-title">Dance Posts</h2>
+        </div>
+        <p class="section-aside">A few things I have written about dance.</p>
+      </div>
+
+      <form class="add-post-form" id="add-post-form">
+        <label for="post-caption">Caption</label>
+        <input id="post-caption" name="caption" type="text" maxlength="120" placeholder="Write a short caption">
+        <label for="post-media">Choose dance photos or videos</label>
+        <input id="post-media" name="media" type="file" accept="image/*,video/*" multiple required>
+        <button class="add-post-button" type="submit">Add Post</button>
+        <p class="post-message" id="post-message" aria-live="polite">Your posts are only shown in this browser session.</p>
+      </form>
+
+      <div class="story-grid">
+        <article class="story story-featured" data-category="practice">
+          <a class="story-image-link" href="#story-one" aria-label="Read Finding the beat again">
+            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=1000&q=85" alt="Ballet dancer practicing a graceful pose" loading="lazy">
+            <span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="story-meta"><span>Practice</span><span>My dance hobby</span></div>
+          <h3 id="story-one"><a href="#about">Learning New Dance Steps</a></h3>
+          <p>I like practicing new steps and getting better a little at a time.</p>
+          <button class="like-button" type="button" aria-pressed="false"><span aria-hidden="true">♡</span> <span class="like-label">Give this a heart</span></button>
+        </article>
+
+        <article class="story" data-category="inspiration">
+          <a class="story-image-link" href="#story-two" aria-label="Read A song that made me move">
+            <img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=900&q=85" alt="A colorful live music performance" loading="lazy">
+            <span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="story-meta"><span>Music</span><span>My dance hobby</span></div>
+          <h3 id="story-two"><a href="#about">My Favorite Music to Dance To</a></h3>
+          <p>Music makes dancing more fun. I enjoy moving along to songs I like.</p>
+          <button class="like-button" type="button" aria-pressed="false"><span aria-hidden="true">♡</span> <span class="like-label">Give this a heart</span></button>
+        </article>
+
+        <article class="story" data-category="performance">
+          <a class="story-image-link" href="#story-three" aria-label="Read The magic of the wings">
+            <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=900&q=85" alt="A dancer performing beneath warm stage lights" loading="lazy">
+            <span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="story-meta"><span>Dance</span><span>My dance hobby</span></div>
+          <h3 id="story-three"><a href="#about">Why I Enjoy Dancing</a></h3>
+          <p>Dancing is a fun way to spend my free time and express myself.</p>
+          <button class="like-button" type="button" aria-pressed="false"><span aria-hidden="true">♡</span> <span class="like-label">Give this a heart</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-mark" aria-hidden="true">✳</div>
+      <div class="about-copy">
+        <p class="eyebrow">About me</p>
+        <h2 id="about-title">I Like to Dance</h2>
+        <p>Dance is my hobby. I enjoy learning steps, listening to music, and practicing when I have time.</p>
+        <a class="text-link" href="#newsletter">Get in touch</a>
+      </div>
+      <div class="about-image-wrap">
+        <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=900&q=85" alt="A dancer practicing in a sunlit studio" loading="lazy">
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <div>
+        <p class="eyebrow">Newsletter</p>
+        <h2 id="newsletter-title">Get New Posts</h2>
+        <p>Enter your email to get a message when there is a new post.</p>
+      </div>
+      <form class="newsletter-form">
+        <label class="visually-hidden" for="email-address">Your email address</label>
+        <input id="email-address" name="email" type="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#home"><span class="wordmark-icon">S</span> step notes<span class="wordmark-period">.</span></a>
+    <p>Thanks for visiting my blog.</p>
+    <a class="back-to-top" href="#home">Back to top ↑</a>
+    <p class="copyright">© <span id="year"></span> Step Notes</p>
+  </footer>
+</body>
+</html>

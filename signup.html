@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign up for the Step Notes dance blog.">
+  <title>Sign Up | My Dance Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="signup.js" defer></script>
+</head>
+<body class="login-page">
+  <header class="login-header">
+    <a class="wordmark" href="index.html" aria-label="My Dance Blog home"><span class="wordmark-icon">S</span> step notes<span class="wordmark-period">.</span></a>
+    <a class="login-header-link" href="index.html">← Back to the blog</a>
+  </header>
+
+  <main class="login-main">
+    <section class="login-photo" aria-label="Dance studio">
+      <div class="login-photo-copy">
+        <p>My Dance Blog</p>
+        <h1>Join the blog!</h1>
+      </div>
+    </section>
+
+    <section class="login-form-panel" aria-labelledby="signup-title">
+      <p class="eyebrow">Create an account</p>
+      <h2 id="signup-title">Sign Up</h2>
+      <p class="login-description">Enter your details below.</p>
+
+      <form class="login-form" id="signup-form">
+        <label class="login-field" for="signup-name">
+          Name
+          <input id="signup-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+        </label>
+
+        <label class="login-field" for="signup-email">
+          Email address
+          <input id="signup-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        </label>
+
+        <label class="login-field" for="signup-password">
+          Password
+          <input id="signup-password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required>
+        </label>
+
+        <button class="login-submit" type="submit">Sign Up</button>
+        <p class="login-message" aria-live="polite"></p>
+      </form>
+
+      <p class="signup-prompt">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+
+  <footer class="login-footer">This demo does not save your details.</footer>
+</body>
+</html>
